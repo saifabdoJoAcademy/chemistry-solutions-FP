@@ -27,15 +27,12 @@ body {
   background: url('unity-logo-light.png') no-repeat center;
   background-size: contain;
 }
-/* Custom outlined loading bar */
 #unity-progress-bar-empty {
   width: 400px;
   height: 26px;
-  margin-top: 0px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   display: block;
-  border: 2px solid #0066CC; /* vivid blue outline */
+  border: 2px solid #0066CC; /* Bright, vivid blue outline */
   border-radius: 15px;
   background: transparent;
   overflow: hidden;
@@ -46,14 +43,19 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  width: 0%;
   height: 100%;
-  background: linear-gradient(90deg, #0A84FF, #1FC8FF); /* smooth bright fill */
+  width: 0%;
+  background: linear-gradient(90deg, #0A84FF, #1FC8FF);
   border-radius: 10px;
   transition: width 0.3s ease-in-out;
 }
+/* Footer and misc */
 #unity-footer {
-  position: relative;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
 }
 #unity-webgl-logo {
   float: left;
@@ -65,21 +67,22 @@ body {
   float: right;
   margin-right: 10px;
   line-height: 38px;
-  font-family: arial;
+  font-family: Arial, sans-serif;
   font-size: 18px;
 }
 #unity-fullscreen-button {
   cursor: pointer;
-  float: right;
-  width: 38px;
-  height: 38px;
+  position: relative;
+  width: 56px;
+  height: 56px;
   background: url('fullscreen-button.png') no-repeat center;
+  background-size: 70% 70%;
 }
 #unity-webxr-link {
   float: left;
   margin-right: 10px;
   line-height: 38px;
-  font-family: arial;
+  font-family: Arial, sans-serif;
   font-size: 18px;
 }
 #entervr:enabled,
